@@ -1,0 +1,42 @@
+@media (max-width:768px){
+    /* -----------------NAV SECTION-----------------  */
+    .navbar #navbarNav ul li{
+        text-align: center;
+    }
+    .navbar .nav-link::after{
+        display: none;
+    }
+    /* -----------------BANNER SECTION----------------- */
+    #banner h2{
+     font-size: 30px;
+    }
+    /* -------------------ABOUT SECTION------------------- */
+    #about img{
+        width: 100%;
+    }
+    #about .tittle{
+        margin-top: 20px;
+    }
+
+
+    /*----------------------- footer section -----------------------*/
+    #footer h2{
+        font-size:38px;
+    }
+    #footer p{
+        padding: 15px 0;
+    }
+    #footer .social_icon{
+        margin-bottom: 10px;
+    }
+
+}
+
+
+
+
+@media (max-width:575px){
+    #banner h2{
+        font-size: 20px;
+       }
+}
