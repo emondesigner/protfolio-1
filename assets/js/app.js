@@ -54,3 +54,13 @@ window.addEventListener('scroll', function (){
     }
 })
 // ===========================SCROLL SECTION JS END=============================
+
+
+
+// var moodChange =document.querySelector(".moon_icon ");
+// moodChange.onclick = function(){
+//     document.body.classList.toggle('light_mood');
+//     if(document.body.classList.contains("light_mood")){
+//         moodChange.src = "<i class="fa-solid fa-sun"></i>"
+//     }
+// }

@@ -11,7 +11,23 @@
     --primary-text:#FD4766;
     --text-gray:#c6c9d8bf;
     --text-whit:#fff;
+
+
+
+    /*--------------- White Theam--------------- */
     
+}
+.light_mood{
+    --primary-color:#c27620;
+    --secondary-color:#eee;
+    --bg-dark-color:#fff;
+    --bg-white-color:#000;
+    --gray-color:#111113bf;
+     /* Text color */
+     --primary-font:'Poppins',sans-serif;
+     --primary-text:#fda847;
+     --text-gray:#000;
+     --text-whit:#000;
 }
 /* ::-webkit-scrollbar-track{
     width: 6px;
@@ -79,14 +95,13 @@ p{
     border-color: var(--primary-text);
     transform:scale(0.9) ;
 }
-body{
-    scroll-behavior: smooth;
-}
+
 
 /* ---------------------COMMON CSS END--------------------- */
 
 
 body{
+    scroll-behavior: smooth;
     font-family:var(--primary-font);
     background-color: var(--secondary-color)
 }
@@ -139,27 +154,19 @@ box-shadow: none !important;
     -webkit-animation:img  5.5s infinite linear ;
 }
 @keyframes img{
-    0%{
+    0%, 100%{
         transform: translate(0);
-        -webkit-transform: translate(0);
-        -moz-transform: translate(0);
-        -ms-transform: translate(0);
-        -o-transform: translate(0);
 }
     50%{
-     transform: translateY(50px);
-     -webkit-transform: translateY(50px);
-     -moz-transform: translateY(50px);
-     -ms-transform: translateY(50px);
-     -o-transform: translateY(50px);
+     transform: translateY(20px);
+     -webkit-transform: translateY(20px);
+     -moz-transform: translateY(20px);
+     -ms-transform: translateY(20px);
+     -o-transform: translateY(20px);
 }
-    100%{
+    /* 100%{
         transform: translate(0);
-        -webkit-transform: translate(0);
-        -moz-transform: translate(0);
-        -ms-transform: translate(0);
-        -o-transform: translate(0);
-}
+} */
 }
 #banner a.main_btn{
     margin: 30px 15px 30px 0;
@@ -305,7 +312,7 @@ box-shadow: none !important;
     height: 100%;
     min-height: 450px;
     overflow: hidden;
-    border: 1px solid var(--text-whit);
+    border: 1px solid var(--border-color);
 }
 #portfolio h2{
     padding:10px  0 30px 0;
@@ -326,10 +333,7 @@ box-shadow: none !important;
 #contact{
     margin: 20px 0 50px 0;
 }
-#contact .call_man img{
-    width: 100%;
-    height: 100%;
-}
+
 #contact .form-control{
     background-color: transparent;
     border-color: var(--gray-color);
@@ -354,9 +358,16 @@ box-shadow: none !important;
     margin-top: 30px;
     margin-bottom: 10px;
 }
+#contact form textarea{
+    height:175px;
+}
 /* ====================================CONTACT SECTION END==================================== */
 
 /* ====================================FOOTER SECTION START==================================== */
+#footer{
+    background-color: var(--bg-dark-color);
+    margin: 10px 0 0 0;
+}
 #footer h2 a{
     color: var(--text-gray);
 }
@@ -471,3 +482,21 @@ box-shadow: none !important;
     -o-transition: .1s linear;
 }
 /* ================================CURSOR SECTION END============================== */
+
+
+
+/* =========================MODE CHANGE SECTION START========================= */
+#mode_change{
+    position: relative;
+}
+#mode_change i.moon_icon{
+    position: absolute;
+    top: 10px;
+    color: var(--text-whit);
+    cursor: pointer;
+    font-size:22px;
+    background-color: var(--bg-dark-color);
+    padding: 10px;
+    border-radius: 50%;
+}
+/* =========================MODE CHANGE SECTION END========================= */
