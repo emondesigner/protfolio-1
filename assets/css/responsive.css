@@ -1,4 +1,5 @@
 @media (max-width:768px){
+    
     /* -----------------NAV SECTION-----------------  */
     .navbar #navbarNav ul li{
         text-align: center;
@@ -39,4 +40,11 @@
     #banner h2{
         font-size: 20px;
        }
+
+       h2{
+        font-size:30px;
+    }
+    p{
+        text-align: justify;
+    }
 }
